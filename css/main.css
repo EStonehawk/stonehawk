@@ -143,11 +143,6 @@ html,body
   text-align: justify;
 }
 
-section {
-	width: 60%;
-	margin: 70px auto;
-}
-
 
 .carousel-inner{
   width:100%;
@@ -174,7 +169,7 @@ display:inline-block  !important;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 .carousel-caption-text{
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
 }
 .smallerFont {
@@ -192,9 +187,6 @@ display:inline-block  !important;
 
   }
 }
-
-
-
 
 
 #myCarousel {
