@@ -79,15 +79,19 @@ img {
 
 body {
 font-family: 'Kanit', sans-serif;
-line-height: 2.2;
+line-height: 1.8;
 color: #353839;
+width:100%;
+height:100%;
 }
 
-
+html{
+    width:100%;
+    height:100%;
+}
 
  .panel {
      border: 1px solid  #FF9100;
-     border-radius:0;
      transition: box-shadow 0.5s;
  }
 
@@ -104,12 +108,8 @@ color: #353839;
  .panel-heading {
      color: #fff !important;
      background-color:  #FF9100 !important;
-     padding: 25px;
      border-bottom: 1px solid transparent;
-     border-top-left-radius: 0px;
-     border-top-right-radius: 0px;
-     border-bottom-left-radius: 0px;
-     border-bottom-right-radius: 0px;
+
  }
 
  .panel-footer {
@@ -183,7 +183,7 @@ display:inline-block  !important;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .carousel-caption-text{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
@@ -260,6 +260,15 @@ margin-top: 120px;
   transform: translate3d(0,0,0);
 }
 
+@media all and (min-width: 768px){
+    .hovereffect:hover .overlay{
+        opacity: 1;
+    }
+}
+
+.hovereffect.hovered .overlay{
+    opacity: 1;
+}
 .noselect {
 -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

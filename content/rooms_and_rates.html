@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container" id="nav">
       <div class="navbar-header">
@@ -36,93 +37,93 @@
     </nav>
 
 
-    <div id="pricing" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <div class="panel panel-default text-center">
-            <div class="panel-heading">
-              <h1>Dracula's Suite</h1>
-            </div>
-            <div class="panel-body">
-              <div class="hovereffect">
-              <img class="img-responsive" src="../images/stonehawk_hotel_dracula.jpg" alt="Dracula">
-      <div class="overlay">
-       <p>Stay in our dark, cold, rat-infested suite...complete with matching coffins!</p>
-     </div>
-   </div>
-            </div>
-            <div class="panel-footer">
-              <h3>£50</h3>
-              <h4>per night</h4>
-              <button class="btn btn-lg">Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="panel panel-default text-center">
-            <div class="panel-heading">
-              <h1>Voldemort's Lair</h1>
-            </div>
-            <div class="panel-body">
-              <img class="img-responsive" src="../images/stonehawk_hotel_voldemort.jpg" alt="Voldemort">
-            </div>
-            <div class="panel-footer">
-              <h3>£100</h3>
-              <h4>per night</h4>
-              <button class="btn btn-lg">Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="panel panel-default text-center">
-            <div class="panel-heading">
-              <h1>Medusa's Hideout</h1>
-            </div>
-            <div class="panel-body">
-              <img class="img-responsive" src="../images/stonehawk_hotel_medusa.jpg" alt="Medusa">
-            </div>
-            <div class="panel-footer">
-              <h3>£150</h3>
-              <h4>per night</h4>
-              <button class="btn btn-lg">Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <footer class="container-fluid bg-4 text-center">
+        <div id="pricing" class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h1>Dracula's Suite</h1>
+                </div>
+                <div class="panel-body">
+                  <div class="hovereffect">
+                  <img class="img-responsive" src="../images/stonehawk_hotel_dracula.jpg" alt="Dracula">
+          <div class="overlay">
+           <p class "noselect">Stay in our dark, cold, rat-infested suite...complete with matching coffins!</p>
+         </div>
+       </div>
+                </div>
+                <div class="panel-footer">
+                  <h3>£50</h3>
+                  <h4>per night</h4>
+                  <button class="btn btn-lg">Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h1>Voldemort's Lair</h1>
+                </div>
+                <div class="panel-body">
+                  <img class="img-responsive" src="../images/stonehawk_hotel_voldemort.jpg" alt="Voldemort">
+                </div>
+                <div class="panel-footer">
+                  <h3>£100</h3>
+                  <h4>per night</h4>
+                  <button class="btn btn-lg">Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h1>Medusa's Hideout</h1>
+                </div>
+                <div class="panel-body">
+                  <img class="img-responsive" src="../images/stonehawk_hotel_medusa.jpg" alt="Medusa">
+                </div>
+                <div class="panel-footer">
+                  <h3>£150</h3>
+                  <h4>per night</h4>
+                  <button class="btn btn-lg">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="container-fluid bg-4 text-center">
+          <address>
+        <strong>Stonehawk Hotel</strong><br>
+        101 Mansion<br>
+        Spooky Terrace<br>
+        <abbr title="Phone">P:</abbr> 666
+      </address>
+
       <address>
-    <strong>Stonehawk Hotel</strong><br>
-    101 Mansion<br>
-    Spooky Terrace<br>
-    <abbr title="Phone">P:</abbr> 666
-  </address>
+        <strong>Stonehawk</strong><br>
+        <a href="mailto:#">info@stonehawk-hotel.com</a>
+      </address>
+        </footer>
 
-  <address>
-    <strong>Stonehawk</strong><br>
-    <a href="mailto:#">info@stonehawk-hotel.com</a>
-  </address>
-    </footer>
 
-    <script>$('p.hovereffect').on('touchstart', function (e) {
-    'use strict'; //satisfy code inspectors
-    var link = $(this); //preselect the link
-    if (link.hasClass('hover')) {
-        return true;
-    } else {
-        link.addClass('hover');
-        $('a.hovereffect').not(this).removeClass('hover');
-        e.preventDefault();
-        return false; //extra, and to make sure the function has consistent return points
-    }
-});</script>
+    <script>
+        $(document).ready(function(){
+            'use strict';
+
+            $(.portfolio).on('click', function(){
+                $(this).siblings('.hovereffect').removeClass('hovered');
+                $(this).toggleClass('hovered');
+            });
+        });
+    </script>
 
 
 
 
 
-    <script tpye="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script tpye="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
 
