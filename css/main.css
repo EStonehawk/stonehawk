@@ -169,11 +169,11 @@ display:inline-block  !important;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 .carousel-caption-text{
-  font-size: 15px;
+  font-size: 10px;
   text-align: center;
 }
 .smallerFont {
-  font-size: 15px;
+  font-size: 12px;
 }
 }
 
