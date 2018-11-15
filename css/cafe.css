@@ -4,8 +4,10 @@
 	padding: 0;
 }
 
+/*side nav bar position*/
+
 #side-bar{
-	position: absolute;         /*side nav bar position*/
+	position: absolute;
 	width: 300px;
 	height: 100%;
 	background: #fff;
@@ -32,22 +34,7 @@
 	margin-top:4px;
 }
 
-li{                      /*nav bar menu style*/
-	color: #000;
-	list-style: none;
-	font-size: 50px;
-	cursor: pointer;
-	padding-left:5px;
-}
-
-li:hover{
-	background: #000;
-	color: red;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
+ /*nav bar menu*/
 
 .sidenav {
   height: 100%;
@@ -56,7 +43,8 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #FF9100; /* Stonehawk Orange */
+	opacity: 0.8;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -66,7 +54,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #353535;
   display: block;
   transition: 0.3s;
 }
@@ -103,23 +91,39 @@ body {
   border-radius: 5px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+
+
+/*Rules for main body*/
+
+h1 {font-family: 'Londrina Shadow', cursive; /* Stonehawk offical header font */
+    color: white;
+    }
+
+body {
+		  font-family: 'Indie Flower', cursive;
+		}
+p {
+	font-size: 21px;
 }
 
-/*Header starts*/
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: rgba(120,120,120,0.3);/* Stonehawk Grey */
+  padding: 20px;
+}
+
+/*Header*/
 
 .main-bg {
-  background-image: url("https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a7a3c541e25c15f0049d2222aa1d538&auto=format&fit=crop&w=1504&q=80");
-  background-size: cover;
+  background-image: url(../cafe/images/chalk_background.jpg);
+	background-size: cover;
   background-position: center;
+	background-repeat: no-repeat;
   height: 100vh;
+
 }
+
 
 .header-text {
   color: #fff;
@@ -132,39 +136,320 @@ body {
 }
 
 .ht-head {
-  font-size: 54px;
+  font-size: 120px;
   font-weight: 600;
 }
 
+/*Menu background*/
 .s2-head {
+	background-image: url(../cafe/images/chalk_menu_background.jpg);
+	background-size: cover;
+  background-position: center;
+	background-repeat: no-repeat;
+  height: 100%;
   text-align: center;
+	font-size: 25px;
   padding-top: 100px;
-  padding-bottom: 100px;
+	padding-bottom: 100px;
+	color: #FFF;
+
 }
 
+/*Menu body*/
+.bevBorder {
+  border: 2px dotted;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+
+/*Book a table*/
 .s3-head {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: blueviolet;
+  background-image: url(../cafe/images/cafe-background.jpeg);
   color: #fff;
 }
 
+/*Location*/
 .s4-head {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: cornflowerblue;
+  background-image: url(../cafe/images/location_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
   color: #fff;
 }
 
+/*Events*/
 .s5-head {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: darkorange;
+  background-image: url(../cafe/images/event-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
   color: #fff;
 }
+
+/*List*/
+li{
+	color: #191919;
+	background-color: #191919;
+	list-style: none;
+	font-size: 22px;
+	padding-left:10px;
+	text-align: left;
+}
+
+span.label {
+  float: right;
+  margin: 10px;
+}
+
+.badge {
+	font-size:20px;
+}
+
+/*Book*/
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border-color: black;
+		border-width: medium;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #191919;
+}
+
+
+	/* Events Booking Button style */
+.eventsbtn {
+	    background-color: #FF9100; /* Stonehawk Orange */
+	    border: none;
+	    color: #191919;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 20px;
+	}
+
+
+.eventsbtn:hover, .eventsbtn:focus {
+    border: 1px solid #333;
+    background-color: #FEDDBD;
+    color: #191919;
+}
+
+
+
+/*Survey*/
+.s6-head {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+	background-image: url(../cafe/images/survey-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+  color: #fff;
+}
+
+/*Contact*/
+.s7-head {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+	height: 1000px;
+	background-image: url(../cafe/images/contact_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+  color: #fff;
+}
+
+
+
+
+
+
+/*Social Media Buttons*/
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#socialmedia{
+	background-color: rgba(255,145,0,0.5)
+}
+
+
+
+
+
+
+
+
+
+/*Sign up*/
+
+.s8-head {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+	background-image: url(../cafe/images/signup_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+  color: #fff;
+}
+
+/*Sign up to newsletter form*/
+input {
+  height:38px;
+  font-size:14px;
+  width:100%;
+  box-sizing: border-box;
+  border-radius:3px;
+  border-width:1px;
+  border-style:solid;
+  border-color:transparent;
+}
+input[type="text"] {
+  padding:2px 12px;
+  margin-bottom:8px;
+  border-color:#c9c9c9;
+  box-shadow:inset 0 1px 3px rgba(0,0,0,0.25);
+}
+input[type="submit"] {
+  color:#fff;
+  font-weight:bold;
+  font-family:'Open Sans', sans-serif;
+  border-color:#1c385c;
+  box-shadow:inset 0 1px 0 #7fade7;
+  text-shadow:0 -1px #34629f;
+  background: linear-gradient(to top, #3e74bb 0, #4887dd 100%);
+}
+#newsletter {
+  width:300px;
+  height:250px;
+  margin:0 auto;
+  background:#fff;
+  position:relative;
+  border-radius:4px;
+  z-index:20;
+}
+#newsletter:before {
+  display:block;
+  content:"";
+  height:5px;
+  width:100%;
+  top:-20px;
+  right:-20px;
+  left:-20px;
+  border-top-right-radius:4px;
+  border-top-left-radius:4px;
+  background: repeating-linear-gradient(-225deg, #4782ce, #4782ce 12px, #fff 12px, #fff 24px, #ea222e 24px, #ea222e 36px, #fff 36px, #fff 48px);
+}
+#newsletter .seal {
+  position:absolute;
+  top:-1px;
+  right:0;
+}
+#newsletter .seal:before,
+#newsletter .seal:after {
+  display:block;
+  content:"";
+  border:1px solid #dcdcdc;
+  border-radius:50%;
+  position:absolute;
+}
+#newsletter .seal:before {
+  width:50px;
+  height:50px;
+  top:8px;
+  right:8px;
+}
+#newsletter .seal:after {
+  width:60px;
+  height:60px;
+  top:3px;
+  right:3px;
+}
+#newsletter .seal i {
+  position:absolute;
+  font-size:24px;
+  color:#afafaf;
+  top:20px;
+  right:22px;
+  transform: rotate(12deg);
+}
+#newsletter form {
+  padding:24px 20px 20px;
+}
+#newsletter form .title {
+  font-size:24px;
+  font-weight:100;
+  color:#4783ce;
+  margin-bottom:5px;
+}
+#newsletter form label {
+  display:block;
+  font-size:16px;
+  line-height:24px;
+  color:#818181;
+  margin-bottom:20px;
+}
+.shadow {
+  width:240px;
+  height:30px;
+  margin:0 auto;
+  box-shadow:10px 10px 15px rgba(0,0,0,0.4);
+  border-radius:50%;
+  position:relative;
+  top:-30px;
+  z-index:10;
+}
+
+
+
 
 /*back to top btn*/
 
@@ -174,7 +459,7 @@ body {
   bottom: 15px;
   right: 15px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 25px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -186,4 +471,21 @@ body {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
