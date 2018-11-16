@@ -4,7 +4,7 @@
 	padding: 0;
 }
 
-/*side nav bar position*/
+/*Side nav bar position*/
 
 #side-bar{
 	position: absolute;
@@ -34,7 +34,7 @@
 	margin-top:4px;
 }
 
- /*nav bar menu*/
+ /*Nav bar menu*/
 
 .sidenav {
   height: 100%;
@@ -44,12 +44,12 @@
   top: 0;
   right: 0;
   background-color: #FF9100; /* Stonehawk Orange */
-	opacity: 0.8;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
+ /*Nav bar menu items*/
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -63,6 +63,8 @@
   color: #f1f1f1;
 }
 
+/*Nav bar close button*/
+
 .sidenav .closebtn {
   position: absolute;
   top: 10px;
@@ -75,6 +77,8 @@
   border-radius: 5px;
 }
 
+/*Main nav bar toggle button*/
+
 #main {
   transition: margin-right 0.5s;
   padding: 16px;
@@ -86,17 +90,18 @@
   top: 15px;
   right: 15px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 0px 10px;
   border-radius: 5px;
 }
 
 
 
-/*Rules for main body*/
+/*Rules for body*/
 
-h1 {font-family: 'Londrina Shadow', cursive; /* Stonehawk offical header font */
-    color: white;
+h1 {
+	font-family: 'Londrina Shadow', cursive; /* Stonehawk offical header font */
+  color: white;
     }
 
 body {
@@ -106,14 +111,14 @@ p {
 	font-size: 21px;
 }
 
-/* Style the container */
+/* container */
 .container {
   border-radius: 5px;
   background-color: rgba(120,120,120,0.3);/* Stonehawk Grey */
   padding: 20px;
 }
 
-/*Header*/
+/*Home*/
 
 .main-bg {
   background-image: url(../cafe/images/chalk_background.jpg);
@@ -124,7 +129,7 @@ p {
 
 }
 
-
+/*Header*/
 .header-text {
   color: #fff;
   vertical-align: middle;
@@ -183,6 +188,20 @@ p {
 	height: 100%;
   color: #fff;
 }
+.google-maps {
+			 position: relative;
+			 padding-bottom: 75%; // aspect ratio
+			 height: 0;
+			 overflow: hidden;
+	 }
+	 .google-maps iframe {
+			 position: absolute;
+			 top: 0;
+			 left: 0;
+			 width: 100% !important;
+			 height: 100% !important;
+	 }
+
 
 /*Events*/
 .s5-head {
