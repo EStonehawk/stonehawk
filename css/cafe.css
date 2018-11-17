@@ -7,7 +7,6 @@
 .sidenav {
   height: 100%;
   width: 0;
-
   position: fixed;
   z-index: 1;
   top: 0;
@@ -271,19 +270,15 @@ span.label {
   color: #fff;
 }
 
-
-
-
-
-
 /*Social Media Buttons*/
 .fa {
-  padding: 10px;
+  padding: 5px;
   font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  border-radius: 30px;
 
 }
 

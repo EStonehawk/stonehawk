@@ -11,7 +11,7 @@ p {
 }
 
 .bg-1 {
-       background-color: #FF9100; /* Orange */
+       background-color: #FF9100; /* Stonehawk Orange */
         color: #ffffff;
     }
 
@@ -133,14 +133,150 @@ html,body
      color: #fff;
  }
 
+
+ /*=-footer-=*/
+ footer {color: #fff;
+   font-size: 15px;
+
+ }
+
+ footer p {
+			color:#353839 ;
+ ;
+			}
+	   footer a {
+				color: #353839;
+			}
+
+.footericon {
+  color: #0084b4;
+}
+.twitter {
+  color:#0084b4;
+}
+
+.social-pet ul {
+  display:inline-table;
+
+}
+ .social-pet li {
+ 				display:inline-block;
+ 				margin-right: 15px;
+        text-align: center;
+
+ 			}
+ 			.social-pet li a {
+ 				height: 35px;
+ 				width: 35px;
+ 				border-radius: 50%;
+ 				text-align: center;
+ 				display: block;
+ 				line-height: 35px;
+ 				background-color: #3a5a95;
+ 				color: #fff;
+ 			}
+ 			.social-pet li:nth-child(2) a {
+ 				background-color: #57aced;
+ 			}
+ 			.social-pet li:nth-child(3) a {
+ 				background-color: #dd4f43;
+ 			}
+ 			.social-pet li:nth-child(4) a {
+ 				background-color: #6b27b2;
+ 			}
+ 			.social-pet li a:hover {
+ 				background-color: #0141a2;
+ 			}
+ 			.social-pet li a:hover i {
+ 				transform: rotate(360deg);
+ 				-moz-transform: rotate(360deg);
+ 				-webkit-transform: rotate(360deg);
+ 			}
+      .recent-post li {
+
+    				color: #ccc;
+    				margin-bottom: 25px;
+    			}
+    			.recent-post li label {
+
+    				border: 2px solid #ccc;
+    				padding: 1px 7px;
+    				text-align: center;
+    			}
+    			.recent-post li label span {
+    				color: #fff;
+    			}
+     /* Create three equal columns that floats next to each other */
+     .column {
+         float: left;
+         width: 33.33%;
+         padding: 20px;
+         height: 200px;
+
+     }
+
+     /* Clear floats after the columns */
+     .row:after {
+         content: "";
+         display: table;
+         clear: both;
+     }
+
+
  #services {
    background-color: #FF9100;
  }
 
 #contact {
-  background-color: #FF9100;
+  background-color: #474e5d;
+  opacity: 0.8;
   margin-top:120px;
+  padding-top: 20px;
   text-align: justify;
+
+  color: #fff;
+}
+
+.b1 {
+  background-color: #FF9100;
+  color:#fff;
+}
+
+.testimonial {
+  color: #FFF;
+  width: 50%;
+  height: auto;
+
+  font-weight: 700;
+  -webkit-box-shadow: -1px 2px 3px 0.5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 3px 0.5px rgba(0,0,0,0.75);
+  -ms-box-shadow: -1px 2px 3px 0.5px rgba(0,0,0,0.75);
+  -o-box-shadow: -1px 2px 3px 0.5px rgba(0,0,0,0.75);
+  box-shadow: -1px 2px 3px 0.5px rgba(0,0,0,0.75);
+  background-color: #FF9100;
+  font-family: 'Kanit', sans-serif;
+   }
+
+
+.testimonial-quote-left {
+  font-size: 60px;
+  text-align: left;
+}
+
+.testimonial-quote-right {
+  font-size: 60px;
+  text-align: right;
+}
+
+#testimonals {
+padding-bottom: 40px;
+background-color: #474e5d;
+opacity: 0.8;
+}
+
+#contactfooter{
+  padding-top: 40px;
+
 }
 
 
@@ -168,19 +304,44 @@ display:inline-block  !important;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+
 .carousel-caption-text{
   font-size: 10px;
   text-align: center;
 }
 .smallerFont {
-  font-size: 12px;
+  font-size: 22px;
 }
+h1{
+  font size:15px;
+}
+.carousel-indicators{
+  padding-bottom: 660px;
 }
 
+/* footer twitter font */
+.twitter {
+  font-size: 13px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+.testimonial{
+  width:300px;
+}
+
+}
+
+.update{
+  margin-top: 120px;
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .carousel-caption-text{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
@@ -270,4 +431,12 @@ margin-top: 120px;
 
 .hovereffect.hovered .overlay{
     opacity: 1;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
