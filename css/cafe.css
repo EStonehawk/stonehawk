@@ -94,7 +94,7 @@ p {
   background-position: center;
 	background-repeat: no-repeat;
   height: 100vh;
-  
+
 
 }
 
@@ -304,16 +304,6 @@ span.label {
   color: white;
 }
 
-#socialmedia{
-	background-color: rgba(255,145,0,0.5)
-}
-
-
-
-
-
-
-
 
 
 /*Sign up*/
@@ -489,6 +479,15 @@ input[type="submit"] {
   left:0;
 
 
+}
+.label .label-danger{
+  font-size: 15px;
+}
+.badge {
+  font-size: 15px;
+}
+#newsletter{
+  z-index: 1;
 }
 }
 @media screen and (max-height: 450px) {
