@@ -94,6 +94,7 @@ p {
   background-position: center;
 	background-repeat: no-repeat;
   height: 100vh;
+  
 
 }
 
@@ -466,7 +467,29 @@ input[type="submit"] {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
-  }
+		}
+		#mainheader {
+			font-size: 70px;
+			}
+.ht-head {
+	font-size: 50px;
+}
+
+.bevBorder{
+  margin-right: 70px;
+}
+*{
+
+}
+.main-bg {
+
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+
+
+}
 }
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -475,4 +498,13 @@ input[type="submit"] {
   .sidenav a {
     font-size: 18px;
   }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 2500px) {
+	.bevBorder {
+	  border: 2px dotted;
+		margin-left: 100px;
+    margin-right: 20px;
+	  margin-top: 25px;
+	}
 }
