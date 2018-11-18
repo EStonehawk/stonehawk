@@ -77,7 +77,7 @@ body {
 		  font-family: 'Indie Flower', cursive;
 		}
 p {
-	font-size: 21px;
+	font-size: 25px;
 }
 
 /* container */
@@ -281,13 +281,13 @@ span.label {
   color: #fff;
 }
 
-.fb-comments {
+
+/*Social Media*/
+
+#socialmedia{
   background-color: #fff;
+  color:black;
 }
-
-
-
-/*Social Media Buttons*/
 .fa {
   padding: 5px;
   font-size: 30px;
@@ -482,9 +482,7 @@ input[type="submit"] {
 .bevBorder{
   margin-right: 70px;
 }
-*{
 
-}
 .main-bg {
 
   top:0;
