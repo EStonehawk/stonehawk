@@ -238,12 +238,23 @@ span.label {
 
 
 .eventsbtn:hover, .eventsbtn:focus {
-    border: 1px solid #333;
+    border: 1px solid black;
     background-color: #FEDDBD;
     color: #191919;
 }
 
+/*Book Tickets Modal*/
 
+.modal-header, h4, .close {
+    background-color: #FF9100;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}
 
 /*Survey*/
 .s6-head {
@@ -269,6 +280,9 @@ span.label {
 	height: 100%;
   color: #fff;
 }
+
+
+
 
 /*Social Media Buttons*/
 .fa {
