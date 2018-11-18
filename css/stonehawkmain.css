@@ -1,0 +1,72 @@
+
+    body {
+      font-family: 'Londrina Shadow', cursive;
+      text-transform: uppercase;
+      background: #002366;
+      height: 100%;
+      overflow: hidden;
+      font-size: 35px;
+
+    }
+
+    .text {
+      background-color: white;
+      color: black;
+      font-size: 9vw;
+      font-weight: bold;
+      margin: 0 auto;
+      padding: 10px;
+      width: 50%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mix-blend-mode: screen;
+    }
+    .layer {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+
+
+      transition: transform .2s;
+      transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+      transform-style: preserve-3d;
+    }
+
+    nav {
+      vertical-align: center;
+    }
+
+    nav ul {
+      padding-left: 66.66%;
+      font-size: larger;
+      line-height: 2;
+    }
+
+    nav ul li {
+      list-style-type: none;
+    }
+
+    nav ul li a {
+      text-shadow: ;
+      color: #fff;
+    }
+
+    .front{
+    background-image: url(../stonehawk_enterprises_background.png);
+    background-size: cover;
+
+
+
+
+    }
+
+    body:hover .front{
+    	transform: perspective(700px) scale(0.5) translateX(-16.66%) rotateY(25deg);
