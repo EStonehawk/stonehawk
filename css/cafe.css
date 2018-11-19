@@ -278,6 +278,9 @@ span.label {
   color: #fff;
 }
 
+.fb-comments{
+  background-color: #fff;: 
+}
 
 /*Social Media*/
 
@@ -483,7 +486,6 @@ input[type="submit"] {
 }
 
 .main-bg {
-
   top:0;
   right:0;
   bottom:0;

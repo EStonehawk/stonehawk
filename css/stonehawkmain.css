@@ -1,4 +1,4 @@
-
+/* Stonehawk Enterprises Splash Page*/
     body {
       font-family: 'Londrina Shadow', cursive;
       background: #002366;
@@ -76,35 +76,33 @@
     	transform: perspective(400px) scale(0.5) translateX(-16.66%) rotateY(25deg);
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px)
- {
-        .layer{
-          font-size: 20px;
-          text-align: center;
-          transition-delay: .1s;
-        }
+/* Stonehawk Enterprises Mission Statement*/
+h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+  transition: all linear 5s;
+}
+h2{
+  font-size: 25px;
+  text-decoration: none;
+  color: #ffffb2;
+  text-align: center;
+  font-family:'Indie Flower', cursive;
 
-        #logo{
-         width: 40px;
-         height:40px;
-
-        }
-        nav ul a {
-          color: #ffffb2;
-        }
-        .text {
-          padding: 0x;
-
-        }
-
-        body:hover .front{
-          transform: perspective(200px) scale(0.6) translateX(-16.66%) rotateY(25deg);
-        }
-        }
+}
+h3 {font-size: 35px;
+color:white;
+text-decoration: none;}
 
 
-
+}
+a:hover {
+  color: #EBC500; !important
+  font-size: 25px;
+  text-decoration: none;
+  }
 
         .box-cont {
           background-color: #353535;
@@ -155,23 +153,6 @@
           transition: 3.0s;
         }
 
-        h1 {
-          display: block;
-          width: 100%;
-          text-align: center;
-          opacity: 1;
-          transition: all linear 5s;
-        }
-        h2{
-          font-size: 25px;
-          text-decoration: none;
-          color: #ffffb2;
-        }
-        a:hover {
-          color: #EBC500; !important
-          font-size: 25px;
-          text-decoration: none;
-          }
 
         .invisible {
           opacity: 0;
@@ -184,24 +165,42 @@
     text-align:center;
 
 }
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
 
+/* Responsive layout */
+@media screen and (max-width: 600px)
+ {
+        .layer{
+          font-size: 20px;
+          text-align: center;
+          transition-delay: .1s;
+        }
 
+        #logo{
+         width: 40px;
+         height:40px;
+
+        }
+        nav ul a {
+          color: #ffffb2;
+        }
+        .text {
+          padding: 0x;
+
+        }
+
+        body:hover .front{
+          transform: perspective(200px) scale(0.6) translateX(-16.66%) rotateY(25deg);
+        }
+
+          body {
+            position: center;
+          }
           html, body {
-  overflow-x: hidden;
-}
-body {
-  position:center;
-}
+          overflow-x: hidden;
 
-.box-cont {
-  background-color: #353535;
-  color: #fff;
-  position: center;
 
-  transform: translate(-50%, -50%)
-}
+
+                }
 
 
 
