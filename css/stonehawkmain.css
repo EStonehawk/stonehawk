@@ -36,8 +36,8 @@
     	bottom: 0;
 
 
-      transition: transform .2s;
-      transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+      transition: transform .9s;
+      transform: perspective(100px) scale(1) translateX(0) rotateY(0);
       transform-style: preserve-3d;
     }
 
@@ -71,10 +71,6 @@
     .front{
     background-image: url(../stonehawk_enterprises_background.png);
     background-size: cover;
-
-
-
-
     }
 
     body:hover .front{
@@ -82,18 +78,20 @@
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px)
+@media screen and (max-width: 600px)
  {
         .layer{
-          font-size: 11px;
+          font-size: 20px;
           text-align: center;
           transition-delay: .1s;
         }
         #logo{
-         width: 30px;
-         height:30px;
+         width: 40px;
+         height:40px;
 
         }
 
-
+        body:hover .front{
+          transform: perspective(200px) scale(0.6) translateX(-16.66%) rotateY(25deg);
+        }
         }
