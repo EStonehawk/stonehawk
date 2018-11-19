@@ -135,8 +135,10 @@ html,body
 
 
  /*=-footer-=*/
- footer {color: #fff;
+ footer {
+   color: #fff;
    font-size: 15px;
+   overflow: hidden;
 
  }
 
@@ -195,7 +197,7 @@ html,body
       .recent-post li {
 
     				color: #ccc;
-    				margin-bottom: 25px;
+
     			}
     			.recent-post li label {
 
@@ -292,19 +294,14 @@ display:inline-block  !important;
 }
 .carousel-content {
   position: fixed;
-  bottom: 10%;
   left: 5%;
   z-index: 20;
   color: white;
 }
 
-.carousel-indicators{
-  padding-bottom: 270px;
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
 
 .carousel-caption-text{
   font-size: 10px;
@@ -317,7 +314,7 @@ h1{
   font size:15px;
 }
 .carousel-indicators{
-  padding-bottom: 660px;
+align:center;
 }
 
 /* footer twitter font */
@@ -338,17 +335,89 @@ footer p {
 .update{
   margin-top: 120px;
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .carousel-caption-text{
     font-size: 25px;
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-
   }
+
+
 }
 
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 1800px){
+.jumbotron {
+  padding-bottom: 300px;
+
+}
+#pricing {
+padding-bottom: 300px;
+}
+#testimonals{
+  padding-bottom: 300px;
+
+}
+#news {
+  padding-bottom: 250px;
+}
+footer {
+position:absolute;
+bottom:0;
+width:100%;
+z-index: 9999;
+}
+}
+
+    /* Media query for mobile viewport */
+    @media screen and (max-width: 400px) {
+        #paypal-button-container1,
+        #paypal-button-container2,
+        #paypal-button-container3 {
+            width: 100%;
+        }
+    }
+
+    /* Media query for desktop viewport */
+    @media screen and (min-width: 400px) {
+          #paypal-button-container1,
+          #paypal-button-container2,
+          #paypal-button-container3 {
+            width: 200px;
+            display: inline-block;
+
+
+        }
+    }
+  /* Media query targeting i-pads */
+    @media only screen
+    and (min-width : 768px)
+    and (max-width : 1024px)  {
+
+body {
+  padding-top: 50px;
+}
+      .jumbotron {
+        padding-bottom: 200px;
+
+
+      }
+      #pricing {
+      padding-bottom: 300px;
+      }
+      #testimonals{
+        padding-bottom: 300px;
+
+      }
+      footer {
+      position:absolute;
+      bottom:0;
+      width:100%;
+      z-index: 9999;
+      }
+    }
 
 #myCarousel {
   padding-top: 120px;

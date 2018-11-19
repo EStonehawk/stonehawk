@@ -506,9 +506,12 @@ input[type="submit"] {
     padding-top: 15px;
   }
   .sidenav a {
-    font-size: 18px;
+    font-size: 12px;
   }
+
 }
+
+
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 2500px) {
 	.bevBorder {
