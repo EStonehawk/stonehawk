@@ -85,10 +85,14 @@
           text-align: center;
           transition-delay: .1s;
         }
+
         #logo{
          width: 40px;
          height:40px;
 
+        }
+        nav ul a {
+          color: #ffffb2;
         }
 
         body:hover .front{
