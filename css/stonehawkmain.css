@@ -6,6 +6,7 @@
       height: 100%;
       overflow: hidden;
       font-size: 35px;
+      font-weight: bold;
 
     }
 
@@ -48,16 +49,21 @@
       padding-left: 66.66%;
       font-size: larger;
       line-height: 2;
+      color:#fff;
     }
 
     nav ul li {
       list-style-type: none;
+
     }
 
-    nav ul li a {
-      text-shadow: ;
-      color: #fff;
-    }
+    nav ul li a:hover {
+
+      color: #EBC500; !important
+      font-size: 22px;
+      text-decoration: none;
+      }
+
 
     .front{
     background-image: url(../stonehawk_enterprises_background.png);
