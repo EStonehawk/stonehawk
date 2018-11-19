@@ -1,7 +1,6 @@
 
     body {
       font-family: 'Londrina Shadow', cursive;
-      text-transform: uppercase;
       background: #002366;
       height: 100%;
       overflow: hidden;
@@ -96,10 +95,114 @@
         }
         .text {
           padding: 0x;
-          
+
         }
 
         body:hover .front{
           transform: perspective(200px) scale(0.6) translateX(-16.66%) rotateY(25deg);
         }
+        }
+
+
+
+
+        .box-cont {
+          background-color: #353535;
+          color: #fff;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%)
+        }
+
+        #esterno {
+          stroke-dashoffset: 200;
+          stroke-dasharray: 200;
+          transform: rotate(-105deg) translate(-673px, -237px);
+          visibility: hidden;
+          transition: all 2.0s;
+          transition-delay: 1.5s;
+        }
+
+        #esterno.over {
+          stroke-dashoffset: 0;
+          visibility: visible;
+          transition: 2.0s;
+        }
+
+        #bordo {
+          stroke-dashoffset: 879;
+          stroke-dasharray: 878;
+          visibility: hidden;
+          transition: 2.0s;
+        }
+
+        #bordo.over {
+          stroke-dashoffset: 0;
+          transition: 2.0s;
+          visibility: visible;
+          transition-delay: 0.7s;
+        }
+
+        #content-txt {
+          opacity: 0;
+          transition: 2.0s;
+          text-align: center;
+        }
+
+        #content-txt.over {
+          opacity: 100;
+          transition: 3.0s;
+        }
+
+        h1 {
+          display: block;
+          width: 100%;
+          text-align: center;
+          opacity: 1;
+          transition: all linear 5s;
+        }
+        h2{
+          font-size: 25px;
+          text-decoration: none;
+          color: #ffffb2;
+        }
+        a:hover {
+          color: #EBC500; !important
+          font-size: 25px;
+          text-decoration: none;
+          }
+
+        .invisible {
+          opacity: 0;
+          transition: all linear 0.2s;
+        }
+.back{
+  position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+
+}
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+
+          html, body {
+  overflow-x: hidden;
+}
+body {
+  position:center;
+}
+
+.box-cont {
+  background-color: #353535;
+  color: #fff;
+  position: center;
+
+  transform: translate(-50%, -50%)
+}
+
+
+
         }
