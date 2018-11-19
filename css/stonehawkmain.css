@@ -94,6 +94,10 @@
         nav ul a {
           color: #ffffb2;
         }
+        .text {
+          padding: 0x;
+          
+        }
 
         body:hover .front{
           transform: perspective(200px) scale(0.6) translateX(-16.66%) rotateY(25deg);
