@@ -1,8 +1,8 @@
 
 
   // Function to subscribe
-function myFunction() {
-    window.alert("Thank you! You are now subscribed to our Mailing List!");
+function myFunction(x) {
+    window.alert(x);
 }
 
       // Function to open modal
