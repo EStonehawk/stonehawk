@@ -1,5 +1,10 @@
 
 
+  // Function to subscribe
+function myFunction() {
+    window.alert("Thank you! You are now subscribed to our Mailing List!");
+}
+
       // Function to open modal
       function openModal1(){
         simpleModal1.style.display = 'block';
