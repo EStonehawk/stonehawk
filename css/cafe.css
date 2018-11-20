@@ -278,6 +278,7 @@ span.label {
 #fb-text {
   color:#000000;
 }
+
 /*Social Media Buttons*/
 .socialmedia {
   background-color: #fff;
@@ -503,6 +504,10 @@ input[type="submit"] {
     font-size: 15px;
   }
 
+.comments {
+  margin-left: 30%;
+  margin-right: 30%;
+}
   #newsletter {
     z-index: 1;
   }
