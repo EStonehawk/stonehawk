@@ -1,6 +1,9 @@
-h1 {font-family: 'Londrina Shadow', cursive;
-    color: white;
-    font-size: 80px;}
+/*Rules for body*/
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  color: white;
+  font-size: 80px;
+}
 
 .smallerFont {
   font-size: 50px;
@@ -10,6 +13,24 @@ p {
   font-size: 18px;
 }
 
+body {
+font-family: 'Kanit', sans-serif;
+line-height: 1.8;
+color: #353839;
+width:100%;
+height:100%;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/*bg-1,bg-2,bg-3,b-4*/
 .bg-1 {
        background-color: #FF9100; /* Stonehawk Orange */
         color: #ffffff;
@@ -27,6 +48,11 @@ p {
       padding-right: 50px;
 
   }
+  .bg-4 {
+      background-color: #2f2f2f;
+      color: #ffffff;
+  }
+
 
   .container-fluid {
     padding-top: 25px;
@@ -38,6 +64,21 @@ img {
   border: 7px #002366;
   border-radius: 20px;}
 
+
+  .margin {margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*Nav Bar Container*/
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -57,44 +98,10 @@ img {
   float: left;
 }
 
-.bg-4 {
-    background-color: #2f2f2f;
-    color: #ffffff;
-}
-
-.margin {margin-bottom: 20px;
-}
 
 
-.content {
-  padding: 16px;
-}
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-body {
-font-family: 'Kanit', sans-serif;
-line-height: 1.8;
-color: #353839;
-width:100%;
-height:100%;
-}
-
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-
+/*Rooms and Rates*/
  .panel {
      border: 1px solid  #FF9100;
      transition: box-shadow 0.5s;
@@ -134,7 +141,7 @@ html,body
  }
 
 
- /*=-footer-=*/
+ /* Footer */
  footer {
    color: #fff;
    font-size: 15px;
@@ -300,38 +307,7 @@ display:inline-block  !important;
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
-
-.carousel-caption-text{
-  font-size: 10px;
-  text-align: center;
-}
-.smallerFont {
-  font-size: 22px;
-}
-h1{
-  font size:10px;
-}
-.carousel-indicators{
-align:center;
-}
-
-/* footer twitter font */
-.twitter {
-  font-size: 13px;
-}
-
-footer p {
-  font-size: 15px;
-}
-
-.testimonial{
-  width:300px;
-}
-
-}
 
 .update{
   margin-top: 120px;
@@ -372,7 +348,7 @@ z-index: 9999;
 }
 }
 
-    /* Media query for mobile viewport */
+/* Paypal Media query for mobile viewport */
     @media screen and (max-width: 400px) {
         #paypal-button-container1,
         #paypal-button-container2,
@@ -381,7 +357,7 @@ z-index: 9999;
         }
     }
 
-    /* Media query for desktop viewport */
+/* Payypal Media query for desktop viewport */
     @media screen and (min-width: 400px) {
           #paypal-button-container1,
           #paypal-button-container2,
@@ -392,7 +368,8 @@ z-index: 9999;
 
         }
     }
-  /* Media query targeting i-pads */
+
+/* Media query targeting i-pads */
     @media only screen
     and (min-width : 768px)
     and (max-width : 1024px)  {
@@ -420,6 +397,7 @@ body {
       }
     }
 
+/* Carousel */
 #myCarousel {
   padding-top: 120px;
   margin-bottom: 80px;
@@ -506,7 +484,7 @@ margin-top: 120px;
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive Modal */
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
@@ -566,7 +544,7 @@ margin-top: 120px;
   text-decoration: none;
   cursor:pointer;
 }
-/*/* Add Animation */
+/* Add Animation */
 @keyframes modalopen{
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
