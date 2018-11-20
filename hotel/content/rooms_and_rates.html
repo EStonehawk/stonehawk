@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Stylesheets -->
   <link href="../../css/bootstrap.min.css" rel="stylesheet">
   <link href="../../css/main.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+<!-- J Query and Paypal script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+<!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+
+<!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
 
   <title>Rooms and Rates</title>
-
 </head>
 
 <body>
+
+<!-- Nav Bar Container-->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container" id="nav">
       <div class="navbar-header">
@@ -31,9 +39,11 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav navbar-right">
-<li><a href="../../index.html">Stonehawk Enterprises</a></li>
+    <ul class="nav navbar-nav navbar-right">
+  <li><a href="../../index.html">Stonehawk Enterprises</a></li>
 </ul>
+
+<!-- Nav Bar A Links-->
         <ul class="nav navbar-nav navbar-left">
           <li><a href="../index.html">About the hotel</a></li>
           <li><a href="packages.html">Packages</a></li>
@@ -45,7 +55,7 @@
     </div>
   </nav>
 
-
+<!-- Drac Suite-->
   <div id="pricing" class="container-fluid">
     <div class="row">
       <div class="col-md-4">
@@ -57,7 +67,9 @@
             <div class="hovereffect">
               <img class="img-responsive" src="../images/stonehawk_hotel_dracula.jpg" alt="Dracula">
               <div class="overlay">
-                <p class="noselect" "text-center">Stay in our dark, cold, rat-infested suite...complete with matching coffins!</p>
+                <p class="noselect" "text-center">
+                  Stay in our dark, cold, rat-infested suite...complete with matching coffins!
+                </p>
               </div>
             </div>
           </div>
@@ -65,6 +77,8 @@
             <h3>£50</h3>
             <h4>per night</h4>
             <button id="modalBtn" class="btn btn-lg" onclick="openModal1()">Book Now</button>
+
+<!-- Drac Suite Modal-->
   <div id="simpleModal1" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -73,29 +87,30 @@
       </div>
       <div class="modal-body">
         <p>Stonehawk Hotel Terms and Conditions</p>
-        <h4>These are the terms and conditions that apply when you reserve a room at Stonehawk Hotel.<br>
-            You will be asked to confirm your acceptance of these terms and conditions when you complete your reservation.<br>
+        <h4>
+            These are the terms and conditions that apply when you reserve a room at Stonehawk Hotel.<br>
+            You will be asked to confirm your acceptance of these terms and conditions when you complete your reservation.
             We reserve the right to amend these terms and conditions at any time and you should therefore check them each time you make a reservation.<br><br>
             The terms and conditions applying to your reservation will be those in place on the date that you make your reservation.<br><br>
-
-            You must be at least 16 years old to make a reservation.<br><br>
-
-            Stonehawk Hotel adopts a very dynamic pricing method and the price of our rooms fluctuates based on how we are feeling.<br>
-            When you make a reservation request, we'll give you a total price for the rooms and number of nights you've requested.
-            The price you pay is the price quoted to you at the time you make your reservation.</h4><br>
-
-            <h5>To reserve your room please follow the link to PayPal, where you can confirm the date of your stay and complete payment for room.
-            You will need to provide us with your paypal account, credit or debit card details to secure your reservation.</h5>
+            You must be at least 16 years old to make a reservation.<br><br> Stonehawk Hotel adopts a very dynamic pricing method and the price of our
+            rooms fluctuates based on how we are feeling. When you make a reservation request, we'll give you a total price for the rooms and number of nights you've requested.
+            The price you pay is the price quoted to you at the time you make your reservation.
+          </h4><br>
+            <h5>
+              To reserve your room please follow the link to PayPal, where you can confirm the date of your stay and complete payment for room.
+              You will need to provide us with your paypal account, credit or debit card details to secure your reservation.
+            </h5>
       </div>
       <div class="another-text">
         <h3>Proceed via Paypal to complete reservation<br><br><div id="paypal-button-container1"></div></h3>
       </div>
     </div>
+   </div>
   </div>
-          </div>
-        </div>
-      </div>
+ </div>
+</div>
 
+<!-- Hannibal's Crib-->
       <div class="col-md-4">
         <div class="panel panel-default text-center">
           <div class="panel-heading">
@@ -105,7 +120,10 @@
             <div class="hovereffect">
               <img class="img-responsive" src="../images/stonehawk_hotel_voldemort.jpg" alt="Voldemort">
               <div class="overlay">
-                <p class="noselect" "text-center">Feel right at home in this themed Hannibal Lecter prison! Complete with mask.</p>
+                <p class="noselect" "text-center">
+                  Feel right at home in this themed Hannibal Lecter prison!
+                  Complete with mask.
+                </p>
               </div>
             </div>
           </div>
@@ -113,6 +131,8 @@
             <h3>£100</h3>
             <h4>per night</h4>
             <button id="modalBtn" class="btn btn-lg" onclick="openModal2()">Book Now</button>
+
+<!-- Hannibal Modal-->
   <div id="simpleModal2" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -121,30 +141,37 @@
       </div>
       <div class="modal-body">
         <p>Stonehawk Hotel Terms and Conditions</p>
-        <h4>These are the terms and conditions that apply when you reserve a room at Stonehawk Hotel.<br>
-            You will be asked to confirm your acceptance of these terms and conditions when you complete your reservation.<br>
-            We reserve the right to amend these terms and conditions at any time and you should therefore check them each time you make a reservation.<br><br>
-            The terms and conditions applying to your reservation will be those in place on the date that you make your reservation.<br><br>
-
+        <h4>
+            These are the terms and conditions that apply when you reserve a room at
+            Stonehawk Hotel.<br>
+            You will be asked to confirm your acceptance of these terms and conditions
+            when you complete your reservation. We reserve the right to amend these terms and conditions
+            at any time and you should therefore check them each time you make a reservation.<br><br>
+            The terms and conditions applying to your reservation will be those in place on
+            the date that you make your reservation.<br><br>
             You must be at least 16 years old to make a reservation.<br><br>
-
-            Stonehawk Hotel adopts a very dynamic pricing method and the price of our rooms fluctuates based on how we are feeling.<br>
-            When you make a reservation request, we'll give you a total price for the rooms and number of nights you've requested.
-            The price you pay is the price quoted to you at the time you make your reservation.</h4><br>
-
-            <h5>To reserve your room please follow the link to PayPal, where you can confirm the date of your stay and complete payment for room.
-            You will need to provide us with your paypal account, credit or debit card details to secure your reservation.</h5>
+            Stonehawk Hotel adopts a very dynamic pricing method and the price of our rooms
+            fluctuates based on how we are feeling.
+            When you make a reservation request, we'll give you a total price for the rooms and number
+            of nights you've requested.
+            The price you pay is the price quoted to you at the time you make your reservation.
+          </h4><br>
+            <h5>
+              To reserve your room please follow the link to PayPal, where you can confirm the date of your stay and complete payment for room.
+              You will need to provide us with your paypal account, credit or debit card details to secure your reservation.
+            </h5>
       </div>
       <div class="another-text">
-        <h3>Proceed via Paypal to complete reservation<br><br><div id="paypal-button-container2"></div></h3>
-      </div>
-    </div>
+        <h3>Proceed via Paypal to complete reservation<br><br>
+          <div id="paypal-button-container2"></div></h3>
+       </div>
+     </div>
+   </div>
   </div>
+ </div>
+</div>
 
-          </div>
-        </div>
-      </div>
-
+<!-- Medusa's Hideout-->
       <div class="col-md-4">
         <div class="panel panel-default text-center">
           <div class="panel-heading">
@@ -154,60 +181,70 @@
             <div class="hovereffect">
               <img class="img-responsive" src="../images/stonehawk_hotel_medusa.jpg" alt="Medusa">
               <div class="overlay">
-                <p class="noselect" "text-center">Our most luxurious accommodation: bright, airy room with memory foam double bed...just beware of the snakes.</p>
+                <p class="noselect" "text-center">
+                  Our most luxurious accommodation: bright, airy room with memory foam double bed...
+                  just beware of the snakes.
+                </p>
               </div>
             </div>
           </div>
           <div class="panel-footer">
             <h3>£150</h3>
             <h4>per night</h4>
-                <button id="modalBtn" class="btn btn-lg" onclick="openModal3()">Book Now</button>
-                <div id="simpleModal3" class="modal">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <span class="closeBtn"  onclick="closeModal3()">&times;</span>
-                        <h2>Medusa's Hideout</h2>
-                    </div>
-                    <div class="modal-body">
-                      <p>Stonehawk Hotel Terms and Conditions</p>
-                      <h4>These are the terms and conditions that apply when you reserve a room at Stonehawk Hotel.<br>
-                          You will be asked to confirm your acceptance of these terms and conditions when you complete your reservation.<br>
-                          We reserve the right to amend these terms and conditions at any time and you should therefore check them each time you make a reservation.<br><br>
-                          The terms and conditions applying to your reservation will be those in place on the date that you make your reservation.<br><br>
+            <button id="modalBtn" class="btn btn-lg" onclick="openModal3()">Book Now</button>
 
+  <!-- Medusa Modal-->
+<div id="simpleModal3" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn"  onclick="closeModal3()">&times;</span>
+            <h2>Medusa's Hideout</h2>
+              </div>
+                <div class="modal-body">
+                    <p>Stonehawk Hotel Terms and Conditions</p>
+                      <h4>
+                          These are the terms and conditions that apply when you reserve a room at Stonehawk Hotel.<br>
+                          You will be asked to confirm your acceptance of these terms and conditions when you complete your
+                          reservation.We reserve the right to amend these terms and conditions at any time and you should therefore check them each time
+                          you make a reservation.<br><br>
+                          The terms and conditions applying to your reservation will be those in place on the date that you make your
+                          reservation.<br><br>
                           You must be at least 16 years old to make a reservation.<br><br>
-
-                          Stonehawk Hotel adopts a very dynamic pricing method and the price of our rooms fluctuates based on how we are feeling.<br>
+                          Stonehawk Hotel adopts a very dynamic pricing method and the price of our rooms fluctuates
+                          based on how we are feeling.
                           When you make a reservation request, we'll give you a total price for the rooms and number of nights you've requested.
-                          The price you pay is the price quoted to you at the time you make your reservation.</h4><br>
-
-                          <h5>To reserve your room please follow the link to PayPal, where you can confirm the date of your stay and complete payment for room.
-                          You will need to provide us with your paypal account, credit or debit card details to secure your reservation.</h5>
+                          The price you pay is the price quoted to you at the time you make your reservation.
+                        </h4><br>
+                        <h5>
+                          To reserve your room please follow the link to PayPal, where you can confirm the date of your stay and complete payment for room.
+                          You will need to provide us with your paypal account, credit or debit card details to secure your reservation.
+                        </h5>
                     </div>
                     <div class="another-text">
                       <h3>Proceed via Paypal to complete reservation<br><br><div id="paypal-button-container3"></div></h3>
                   </div>
                 </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              </div>
+            </div>
+         </div>
+       </div>
+     </div>
   </div>
-</div>
 
   <!--footer-->
+  <!--column 1-->
     <footer>
       <div class="row">
         <div class="column" align="center" style="background-color:#ff9c19;">
-          <h5 class="font-weight-bold">ABOUT US</h5>
+          <h5 class="font-weight-bold">STONEHAWK HOTEL</h5>
           <p><span class="glyphicon glyphicon-map-marker footericon"></span>
             101 Mansion Spooky Terrace<br></p>
           <p><span class="far fa-envelope footericon"></span> info@stonehawk-hotel.com
-            <p />
+          </p>
             <p><span class="fas fa-phone-volume footericon"></span> +44 0208 265 4352
-              <p />
+            </p>
         </div>
-
+<!--column 2-->
         <div class="column" align="center" style="background-color:#FF9100;">
           <h5 class="font-weight-bold text-align:center">FOLLOW US</h5>
           <ul class="social-pet">
@@ -218,7 +255,7 @@
           </ul><br><br>
           <h6>&#169; Stonehawk Hotel</h6>
         </div>
-
+<!--column 3-->
         <div class="column" style="background-color:#ff9c19;">
           <h5 class="font-weight-bold" align="center">FRESH TWEETS FROM OUR GUESTS</h5>
           <p class=twitter><span class="fab fa-twitter"></span><a href="#"> @stonehawk-hotel </a> STILL LOCKED IN SPA!!! </p>
@@ -229,14 +266,9 @@
       </div>
     </footer>
 
-
-<script src="../../js/hotel.js" type="text/javascript"></script>
-
+<!--   Link to JS   -->
+  <script src="../../js/hotel.js" type="text/javascript"></script>
   <script tpye="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-
-
-
-</body>
-
+ </body>
 </html>
