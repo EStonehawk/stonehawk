@@ -265,6 +265,9 @@ span.label {
   color: #fff;
 }
 
+.comments{
+  background-color: white;
+}
 /*Facebook comment Plug in */
 .fb-comments {
   background-color: #fff;
