@@ -265,10 +265,12 @@ span.label {
   color: #fff;
 }
 
+/*Facebook comment Plug in */
 .comments{
   background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
 }
-/*Facebook comment Plug in */
 .fb-comments {
   background-color: #fff;
 }
