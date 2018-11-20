@@ -1,79 +1,78 @@
-/* Stonehawk Enterprises Splash Page*/
-    body {
-      font-family: 'Londrina Shadow', cursive;
-      background: #002366;
-      height: 100%;
-      overflow: hidden;
-      font-size: 35px;
-      font-weight: bold;
+/* Stonehawk Enterprises*/
+body {
+  font-family: 'Londrina Shadow', cursive;
+  background: #002366;
+  height: 100%;
+  overflow: hidden;
+  font-size: 35px;
+  font-weight: bold;
+}
 
-    }
+/* Stonehawk Enterprises Front layer*/
+.text {
+  background-color: white;
+  color: black;
+  font-size: 9vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
 
-    .text {
-      background-color: white;
-      color: black;
-      font-size: 9vw;
-      font-weight: bold;
-      margin: 0 auto;
-      padding: 10px;
-      width: 50%;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      mix-blend-mode: screen;
-    }
-    .layer {
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
-    	position: fixed;
-    	top: 0;
-    	left: 0;
-    	right: 0;
-    	bottom: 0;
+.layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform .9s;
+  transform: perspective(100px) scale(1) translateX(0) rotateY(0);
+  transform-style: preserve-3d;
+}
 
+.front {
+  background-image: url(../stonehawk_enterprises_background.png);
+  background-size: cover;
+}
 
-      transition: transform .9s;
-      transform: perspective(100px) scale(1) translateX(0) rotateY(0);
-      transform-style: preserve-3d;
-    }
+body:hover .front {
+  transform: perspective(400px) scale(0.5) translateX(-16.66%) rotateY(25deg);
+}
 
-    nav {
-      vertical-align: center;
-    }
+/* Nav Bar content*/
+nav {
+  vertical-align: center;
+}
 
-    nav ul {
-      padding-left: 66.66%;
-      font-size: larger;
-      line-height: 2;
-      color:#fff;
-    }
+nav ul {
+  padding-left: 66.66%;
+  font-size: larger;
+  line-height: 2;
+  color: #fff;
+}
 
-    nav ul li {
-      list-style-type: none;
+nav ul li {
+  list-style-type: none;
+}
 
-    }
-
-    nav ul li a:hover {
-
-      color: #EBC500; !important
-      font-size: 22px;
-      text-decoration: none;
-      }
+nav ul li a:hover {
+  color: #EBC500;
+   !important font-size: 22px;
+  text-decoration: none;
+}
 
 #logo {
-  width:150px;
-  height:150px;
-  }
-    .front{
-    background-image: url(../stonehawk_enterprises_background.png);
-    background-size: cover;
-    }
-
-    body:hover .front{
-    	transform: perspective(400px) scale(0.5) translateX(-16.66%) rotateY(25deg);
+  width: 150px;
+  height: 150px;
 }
 
 /* Stonehawk Enterprises Mission Statement*/
@@ -84,124 +83,121 @@ h1 {
   opacity: 1;
   transition: all linear 5s;
 }
-h2{
+
+h2 {
   font-size: 25px;
   text-decoration: none;
   color: #ffffb2;
   text-align: center;
-  font-family:'Indie Flower', cursive;
-
+  font-family: 'Indie Flower', cursive;
 }
-h3 {font-size: 35px;
-color:white;
-text-decoration: none;}
 
-
-}
-a:hover {
-  color: #EBC500; !important
-  font-size: 25px;
+h3 {
+  font-size: 35px;
+  color: white;
   text-decoration: none;
+}
+}
+
+a:hover {
+  color: #EBC500;
+   !important font-size: 25px;
+  text-decoration: none;
+}
+
+.box-cont {
+  background-color: #353535;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+/* Start of Eliminare from Code Pen*/
+#esterno {
+  stroke-dashoffset: 200;
+  stroke-dasharray: 200;
+  transform: rotate(-105deg) translate(-673px, -237px);
+  visibility: hidden;
+  transition: all 2.0s;
+  transition-delay: 1.5s;
+}
+
+#esterno.over {
+  stroke-dashoffset: 0;
+  visibility: visible;
+  transition: 2.0s;
+}
+
+#bordo {
+  stroke-dashoffset: 879;
+  stroke-dasharray: 878;
+  visibility: hidden;
+  transition: 2.0s;
+}
+
+#bordo.over {
+  stroke-dashoffset: 0;
+  transition: 2.0s;
+  visibility: visible;
+  transition-delay: 0.7s;
+}
+
+#content-txt {
+  opacity: 0;
+  transition: 2.0s;
+  text-align: center;
+}
+
+#content-txt.over {
+  opacity: 100;
+  transition: 3.0s;
+}
+
+.invisible {
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+/* Responsive layouts */
+/* Mobile and smaller devices*/
+@media screen and (max-width: 600px) {
+  .layer {
+    font-size: 20px;
+    text-align: center;
+    transition-delay: .1s;
   }
 
-        .box-cont {
-          background-color: #353535;
-          color: #fff;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%)
-        }
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
 
-        #esterno {
-          stroke-dashoffset: 200;
-          stroke-dasharray: 200;
-          transform: rotate(-105deg) translate(-673px, -237px);
-          visibility: hidden;
-          transition: all 2.0s;
-          transition-delay: 1.5s;
-        }
+  nav ul a {
+    color: #ffffb2;
+  }
 
-        #esterno.over {
-          stroke-dashoffset: 0;
-          visibility: visible;
-          transition: 2.0s;
-        }
+  .text {
+    padding: 0x;
+  }
 
-        #bordo {
-          stroke-dashoffset: 879;
-          stroke-dasharray: 878;
-          visibility: hidden;
-          transition: 2.0s;
-        }
+  body:hover .front {
+    transform: perspective(200px) scale(0.6) translateX(-16.66%) rotateY(25deg);
+  }
 
-        #bordo.over {
-          stroke-dashoffset: 0;
-          transition: 2.0s;
-          visibility: visible;
-          transition-delay: 0.7s;
-        }
+  body {
+    position: center;
+  }
 
-        #content-txt {
-          opacity: 0;
-          transition: 2.0s;
-          text-align: center;
-        }
-
-        #content-txt.over {
-          opacity: 100;
-          transition: 3.0s;
-        }
-
-
-        .invisible {
-          opacity: 0;
-          transition: all linear 0.2s;
-        }
-.back{
-  position:absolute;
-    width:100%;
-    bottom:0;
-    text-align:center;
-
+  html, body {
+    overflow-x: hidden;
+  }
 }
-
-/* Responsive layout */
-@media screen and (max-width: 600px)
- {
-        .layer{
-          font-size: 20px;
-          text-align: center;
-          transition-delay: .1s;
-        }
-
-        #logo{
-         width: 40px;
-         height:40px;
-
-        }
-        nav ul a {
-          color: #ffffb2;
-        }
-        .text {
-          padding: 0x;
-
-        }
-
-        body:hover .front{
-          transform: perspective(200px) scale(0.6) translateX(-16.66%) rotateY(25deg);
-        }
-
-          body {
-            position: center;
-          }
-          html, body {
-          overflow-x: hidden;
-
-
-
-                }
-
-
-
-        }
